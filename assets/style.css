@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --clr-neon: hsl(5, 88%, 33%);
+    --clr-bg: hsl(0, 0%, 0%);
+}
+
+html {
+    background-image: url("./images/802266.jpg");
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+li, a, button {
+    font-family: 'Crimson Text', serif;
+    font-weight:500;
+    font-size: 21px;
+    color:#ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #24252a;
+
+}
+
+.logo {
+    cursor: pointer;
+    width:75px;
+    height:75px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+
+.nav__links li {
+    display:inline-block;
+    padding: 0px 60px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;    
+}
+.nav__links li a:hover{
+    color: #9e160a;    
+}
+
+button {
+    padding: 6px 15px;
+    background-color: rgb(158, 22, 10);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+button:hover {
+    background-color: rgb(158, 22, 10);
+
+}
+
+.neon-button {
+    font-size: 1.1rem;
+    display:inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--clr-neon);
+    border: currentColor 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    font-weight: 700;
+}
+
+.neon-button::before {
+    content: "";
+    width:100%;
+    height:100%;
+}
+
+.neon-button::after {
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    background: var(--clr-neon);
+    color:var(--clr-bg);
+    transition: 1000ms;
+}
+
+.neon-button:hover::after {
+    opacity: 1;
+}
+/* TEAMS */
+.card {
+    background: rgb(46,9,9);
+    background: linear-gradient(90deg, rgba(46,9,9,1) 0%, rgba(42,3,3,1) 53%, rgba(46,4,4,0.9079832616640406) 100%);    border-radius: .25rem;
+    margin: 20px;
+    width:300px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+    box-shadow: 5px 5px 15px rbga(0,0,0,0.9);
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card-header {
+    color:white;
+    font-size: 1.5rem;
+    margin-bottom:  .5rem;
+}
+
+.card-body {
+    font-size: .9rem;
+}
+
+.card-footer {
+    margin-top:1rem;
+}
+
+.btn-opgg {
+    background: #9e160a;
+    color:white;
+    border:1px solid #9e160a;
+    font-size: 1rem;
+    padding: .5em .75em;
+    border-radius: .25em;
+    cursor:pointer;
+    
+}
+
+.btn-opgg:hover, .btn-opgg:focus {
+    background: hsl(0, 21%, 65%);
+}
+
+.btn-stats {
+    background: none;
+    color: #9e160a;
+    border: 1px solid #9e160a;
+    font-size: 1rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.btn-stats:hover, .btn-stats:focus {
+    background: #9e160a;
+    color:black;
+}
+
+.btn-stats + .btn-stats {
+    margin-left: .25rem;
+}
+
+.team-logo {
+    cursor: pointer;
+    width:150px;
+    height:150px;
+}
+
+.team-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
