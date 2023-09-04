@@ -18,8 +18,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 li, a, button {
@@ -189,5 +187,5 @@ button:hover {
 .team-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
