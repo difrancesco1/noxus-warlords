@@ -12,7 +12,8 @@
 }
 
 html {
-    background-image: url("./images/802266.jpg");
+    background: rgb(73,36,36);
+    background: linear-gradient(90deg, rgba(73,36,36,1) 0%, rgba(47,14,14,1) 53%, rgba(96,6,6,1) 100%);
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -111,7 +112,7 @@ button:hover {
 /* TEAMS */
 .card {
     background: rgb(46,9,9);
-    background: linear-gradient(90deg, rgba(46,9,9,1) 0%, rgba(42,3,3,1) 53%, rgba(46,4,4,0.9079832616640406) 100%);    border-radius: .25rem;
+    background: #24252a;
     margin: 20px;
     width:300px;
     border: solid;
@@ -125,6 +126,7 @@ button:hover {
 
     transition: 0.5s ease;
     cursor: pointer;
+    opacity: 0.85;
 }
 .card:hover {
     transform: scale(1.01);
@@ -163,7 +165,7 @@ button:hover {
 
 .btn-stats {
     background: none;
-    color: #9e160a;
+    color: #ff5546;
     border: 1px solid #9e160a;
     font-size: 1rem;
     padding: 0.5em 0.75em;
@@ -173,7 +175,8 @@ button:hover {
 
 .btn-stats:hover, .btn-stats:focus {
     background: #9e160a;
-    color:black;
+    color:white;
+    border: 1px solid white;
 }
 
 .btn-stats + .btn-stats {
@@ -190,6 +193,8 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 81%;
+    margin:auto;
 }
 
 /* homescreen styling */
@@ -220,8 +225,7 @@ button:hover {
 }
 
 .hero-container {
-    background: rgb(46,9,9);
-    background: linear-gradient(90deg, rgba(46,9,9,1) 0%, rgba(42,3,3,1) 53%, rgba(46,4,4,0.9079832616640406) 100%);    border-radius: .25rem;
+    background: #24252a;
     margin: 20px;
     border: solid;
     border-width: 3px;
@@ -343,8 +347,8 @@ li {
 }
 
 .hero-container {
-    background: rgb(46,9,9);
-    background: linear-gradient(90deg, rgba(46,9,9,1) 0%, rgba(42,3,3,1) 53%, rgba(46,4,4,0.9079832616640406) 100%);    border-radius: .25rem;
+    background: #24252a;    
+    border-radius: .25rem;
     margin: 20px;
     border: solid;
     border-width: 3px;
@@ -354,10 +358,12 @@ li {
     align-items: center;
     padding:15px;
     box-shadow: 5px 5px 15px rbga(0,0,0,0.9);
+    width: 83.5%;
 
     transition: 0.5s ease;
     cursor: pointer;
     opacity: 0.8;
+    position: relative;
 }
 
 .home-logo {
@@ -437,3 +443,42 @@ li {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
 }
+
+.home-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin:auto;
+}
+
+.teams-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin:auto;
+    background: #24252a;    
+    border-radius: .25rem;
+    margin: 20px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+    box-shadow: 5px 5px 15px rbga(0,0,0,0.9);
+    width: 83.5%;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+}
+
+#teams-header {
+    color: white;
+    font-size: 2.5rem;
+}
+
